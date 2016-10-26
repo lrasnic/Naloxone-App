@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="Main" id="BYZ-38-t0r" customClass="ViewController" customModule="Naloxone_Neighbors" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="oQc-LC-86B">
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bUs-7k-lVz">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="500" id="Nv1-AF-SD9"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
+                                        <state key="normal" title="Call 911" backgroundImage="Cross.png">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="N6u-iI-nd8">
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T2r-w5-ldU">
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <state key="normal" title="Save" backgroundImage="Cross.png"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1em-Jv-9mG">
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <state key="normal" title="Trigger" backgroundImage="Bar.png"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CU7-EI-eFE">
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <state key="normal" title="Register" backgroundImage="Bar.png"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="bUs-7k-lVz" firstAttribute="top" secondItem="oQc-LC-86B" secondAttribute="top" id="CgE-sK-Xgo"/>
+                                    <constraint firstItem="bUs-7k-lVz" firstAttribute="leading" secondItem="oQc-LC-86B" secondAttribute="leading" id="rHR-fi-IbU"/>
+                                    <constraint firstAttribute="trailing" secondItem="bUs-7k-lVz" secondAttribute="trailing" id="u3d-2x-91E"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="oQc-LC-86B" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="E8P-fW-Mep"/>
+                            <constraint firstItem="oQc-LC-86B" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Kww-eM-KIq"/>
+                            <constraint firstAttribute="trailing" secondItem="oQc-LC-86B" secondAttribute="trailing" id="Xjf-YK-uVU"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="oQc-LC-86B" secondAttribute="bottom" id="zcT-gx-qUf"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="AAW-RF-W4B">
+            <objects>
+                <viewController storyboardIdentifier="CPR" id="miS-TU-hkd" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ge2-d5-LIW"/>
+                        <viewControllerLayoutGuide type="bottom" id="BLI-FQ-odY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3VQ-de-wAw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="YXH-Lh-KyP">
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="If drug user stops breathing, begin CPR:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C39-Xv-km4">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="Gcx-3g-MfF"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Step 1:  Give 30 Chest Compressions" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X6P-WD-qoR">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="7v3-CH-ENj"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zm6-4K-5en">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="FvR-da-civ"/>
+                                        </constraints>
+                                        <string key="text">Push hard, push fast in the middle of the
+chest at least 2 inches deep and at least
+100 compressions per minute</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Hand Placement.png" translatesAutoresizingMaskIntoConstraints="NO" id="BjI-ea-ooY">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="150" id="bce-0P-Yym"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Step 2:  Give 2 Rescue Breaths" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tB8-TE-6DJ">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="mi0-CJ-i2Z"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pv7-HQ-57j">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="150" id="4FA-W8-gBl"/>
+                                        </constraints>
+                                        <string key="text">Tilt the head back and lift the chin up.
+Pinch the nose shut then make a complete
+seal over the person’s mouth.
+Blow in for about 1 second to make the
+chest clearly rise.
+Give rescue breaths, one after the other.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Breathing.png" translatesAutoresizingMaskIntoConstraints="NO" id="vum-b7-hwh"/>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="YXH-Lh-KyP" firstAttribute="leading" secondItem="3VQ-de-wAw" secondAttribute="leading" id="1yp-3W-wpU"/>
+                            <constraint firstItem="YXH-Lh-KyP" firstAttribute="top" secondItem="3VQ-de-wAw" secondAttribute="top" id="74d-i5-Vhs"/>
+                            <constraint firstAttribute="bottom" secondItem="YXH-Lh-KyP" secondAttribute="bottom" id="8gb-FB-LF1"/>
+                            <constraint firstAttribute="trailing" secondItem="YXH-Lh-KyP" secondAttribute="trailing" id="nNB-55-ed4"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v5W-rP-Yux" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="874" y="139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Bar.png" width="820" height="614"/>
+        <image name="Breathing.png" width="383" height="289"/>
+        <image name="Cross.png" width="600" height="600"/>
+        <image name="Hand Placement.png" width="382" height="286"/>
+    </resources>
+</document>
